@@ -3,16 +3,13 @@ from stages import stages_, logo
 from words import words_
 
 
-"""This program is based on the infamous hang an game."""
+"""This program is based on the infamous hangman game."""
 
 print(logo)
 # Declare and assign lives, list of words, a random choice and the word length
 lives_left = 6
 chosen_word = choice(words_)
 word_length = len(chosen_word)
-
-# for testing purposes
-print(chosen_word)
 
 # display code
 display = ["_" for letter in chosen_word]
